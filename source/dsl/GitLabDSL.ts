@@ -14,6 +14,7 @@ export interface GitLabJSONDSL {
 export interface GitLabDSL extends GitLabJSONDSL {
   utils: {
     fileContents(path: string, repoSlug?: string, ref?: string): Promise<string>
+    getAllNotes(): Promise<GitLabNote[]>
   }
 }
 

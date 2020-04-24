@@ -191,5 +191,6 @@ export const gitlabJSONToGitLabDSL = (gl: GitLabDSL, api: GitLabAPI): GitLabDSL 
   ...gl,
   utils: {
     fileContents: api.getFileContents,
+    getAllNotes: api.getMergeRequestNotes,
   },
 })
